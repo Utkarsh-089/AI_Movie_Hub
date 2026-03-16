@@ -27,21 +27,20 @@
 - **Shadcn/ui** for beautiful UI components
 - **React Router** for navigation
 
-### Backend (Lovable Cloud)
+### Backend
 - **PostgreSQL Database** (via Supabase)
 - **User Authentication** (Supabase Auth)
 - **Edge Functions** (Deno runtime)
 - **Row Level Security** (RLS) for data protection
 
 ### AI Integration
-- **Lovable AI Gateway** with Google Gemini 2.5 Flash
+- **AI Gateway** with Google Gemini 2.5 Flash
 - **TMDB API** for movie data
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 - Node.js 18+ and npm installed
-- A Lovable account (for Cloud backend)
 
 ### Installation
 
@@ -65,7 +64,7 @@ The app will open at `http://localhost:8080`
 
 ## 🔑 Authentication Setup
 
-The app uses Lovable Cloud for authentication, which is already configured and working. No additional setup needed!
+The app uses Cloud for authentication, which is already configured and working. No additional setup needed!
 
 **Auto-confirm emails are enabled** for faster testing - users can login immediately after signup without email verification.
 
@@ -101,7 +100,7 @@ Colors are defined in `src/index.css` using HSL values and semantic tokens.
 
 ## 🤖 AI Recommendations
 
-AI recommendations are powered by Lovable AI (Google Gemini):
+AI recommendations are powered by Google Gemini:
 - Click "Get AI Recommendations" on the homepage
 - AI analyzes popular and trending films
 - Returns personalized movie suggestions
@@ -125,7 +124,7 @@ AI recommendations are powered by Lovable AI (Google Gemini):
 - **Row Level Security (RLS)** enabled on all tables
 - Users can only access their own data
 - Passwords are securely hashed by Supabase Auth
-- API keys for Lovable AI are stored server-side
+- API keys for AI are stored server-side
 - Input validation on all forms
 
 ## ⚠️ Common Issues & Troubleshooting
@@ -133,7 +132,7 @@ AI recommendations are powered by Lovable AI (Google Gemini):
 ### Backend Connectivity
 **Issue:** "Will my backend still work if I go offline?"
 
-**Answer:** No. Lovable Cloud is a cloud-based backend service that requires internet connectivity. If you go offline:
+**Answer:** No. Backend service requires internet connectivity. If you go offline:
 - User authentication will fail
 - Database operations will fail
 - AI recommendations won't work
@@ -163,28 +162,7 @@ If movie data fails to load:
 ### Authentication Issues
 If users can't login:
 - Check browser console for errors
-- Ensure Lovable Cloud is connected
 - Verify RLS policies are set correctly
-
-## 🚢 Deployment
-
-### Deploying to Production
-
-1. **Frontend Deployment** (requires clicking "Update" in publish dialog)
-   - Click "Publish" in Lovable
-   - Your app will be deployed to Lovable's CDN
-   - Updates to UI require clicking "Update"
-
-2. **Backend Deployment** (automatic)
-   - Edge functions deploy automatically
-   - Database changes deploy immediately
-   - No manual deployment needed
-
-### Custom Domain
-To connect a custom domain:
-- Navigate to Project → Settings → Domains
-- Follow the setup instructions
-- Requires a paid Lovable plan
 
 ## 📚 Project Structure
 
@@ -227,7 +205,7 @@ Potential features to add:
 
 ## 🐛 Known Limitations
 
-1. **Express.js + MongoDB**: This app uses Lovable Cloud (Supabase/PostgreSQL), not Express.js + MongoDB as originally requested. To use Express.js + MongoDB, you would need to:
+1. **Express.js + MongoDB**: This app uses (Supabase/PostgreSQL), not Express.js + MongoDB. To use Express.js + MongoDB, you would need to:
    - Set up a separate Express.js server
    - Connect to MongoDB Atlas
    - Rewrite the edge functions as Express routes
@@ -235,25 +213,4 @@ Potential features to add:
 
 2. **Offline Mode**: No offline support - requires internet connection
 
-3. **AI Limitations**: AI recommendations depend on:
-   - Lovable AI credits
-   - Rate limits
-   - Model availability
-
-## 📝 License
-
-This project is built with Lovable and uses:
-- TMDB API (requires attribution)
-- Lovable Cloud (commercial service)
-- Open source libraries (see package.json)
-
-## 🤝 Support
-
-For issues or questions:
-- Check the Lovable docs: https://docs.lovable.dev
-- Join Lovable Discord: https://discord.gg/lovable
-- TMDB API docs: https://developer.themoviedb.org
-
----
-
-**Built with ❤️ using Lovable, React, and AI**
+**Created with❤️by Utkarsh Chauhan
