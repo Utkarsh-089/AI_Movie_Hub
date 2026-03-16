@@ -1,0 +1,4 @@
+project_id = "ympsqbzanuhgchblhkoo"
+
+[functions.get-ai-recommendations]
+verify_jwt = true
