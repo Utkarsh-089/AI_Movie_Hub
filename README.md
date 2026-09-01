@@ -114,8 +114,7 @@ AI recommendations are powered by Google Gemini:
 ## 📡 API Integration
 
 ### TMDB API
-- The app uses TMDB API key: `ca48027d4c6f58f67b60a9cb4dc450fa`
-- **Note:** This is a public API key included in the code
+- The app uses TMDB API key: your_api_key_here
 - For production, consider using environment variables
 - TMDB provides movie data, posters, ratings, etc.
 
